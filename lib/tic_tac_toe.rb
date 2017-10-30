@@ -62,7 +62,8 @@ class TicTacToe
   end
 
   def full?
-    turn_count == 9 ? true : false
+    # turn_count == 9 ? true : false
+    board.all? {|e| e != " "}
   end
 
   def draw?
